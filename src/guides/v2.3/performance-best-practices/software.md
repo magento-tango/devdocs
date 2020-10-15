@@ -69,7 +69,7 @@ To get maximum speed out of Magento 2 on PHP7, you must activate the OpCache mod
   opcache.max_accelerated_files=60000
   opcache.consistency_checks=0
   opcache.validate_timestamps=0
-  opcache.enable_cli=1
+  opcache.enable_cli=0
 ```
 
 When you fine-tune the memory allocation for opcache, take into account the size of Magento’s code base and all your extensions. Magento’s performance team uses the values in the preceding example for testing because it provides enough space in opcache for the average number of installed extensions.
